@@ -41,7 +41,7 @@ def main():
     root.bind('<Up>', lambda event: print("Forward key"))
 
     left_button = ttk.Button(main_frame, text="Left")
-    left_button.grid(row=5,column=2)
+    left_button.grid(row=5,column=0)
     left_button['command'] = lambda: print("Left button")
     root.bind('<Left>', lambda event: print("Left key"))
 
@@ -51,7 +51,7 @@ def main():
     root.bind('<space>', lambda event: print("Stop key"))
 
     right_button = ttk.Button(main_frame, text="Right")
-    right_button.grid(row=5,column=0)
+    right_button.grid(row=5,column=2)
     right_button['command'] = lambda: print("Right button")
     root.bind('<Right>', lambda event: print("Right key"))
 
